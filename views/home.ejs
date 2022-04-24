@@ -1,0 +1,46 @@
+<%- include ('partials/header') -%>
+
+<div class="row">
+  <div class="col">
+    <div class="container">
+      <div class="box">
+        <h1>Good <%= timeOfDay %>, and <%= content %></h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="container">
+      <div class="box">
+        <!-- Posts -->
+        <% for(var i=0; i<posts.length; i++) {%>
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title"><%= posts[i].title %></h5>
+            <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+            <% let postTitle = posts[i].title; %>
+            <% let truncText = posts[i].body.slice(0, 50); %>
+
+            <% if((truncText + "...").length >= 50) { %>
+            <%  truncText = truncText.slice(0, 47); %>
+            <%  truncText = truncText + " ..."; %>
+            <% } %>
+
+
+            <p class="card-text"><%= truncText %></p>
+             <a href="/posts/<%= postTitle %>" class="card-link">Read More</a>
+            <!-- <a href="#" class="card-link">Another link</a> -->
+          </div>
+        </div>
+        <% } %>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+</div>
+
+
+
+<%- include ('partials/footer') -%>

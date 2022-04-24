@@ -1,0 +1,57 @@
+/*
+Color Scheme
+#534340
+#BB9981
+#C5D8A4
+#F4FCD9
+ */
+body {
+  background-color: #F4FCD9;
+}
+
+.body{
+  text-align: center;
+}
+
+.title {
+  margin: 5% auto;
+  color: #534340;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.box {
+  /* border: 1px dotted black; */
+  margin: 25px auto;
+  text-align: center;
+  width: 40%;
+}
+
+.card{
+
+}
+
+.card-body{
+
+}
+
+.card-title{
+  font-size: 1.5rem;
+}
+
+.card-text{
+font-size: .8rem;
+}
+
+.composeForm {
+}
+
+.composeItem{
+  margin: 2% auto;
+  height: auto;
+}
+
+.footer{
+  margin: 5% auto;
+  text-align: center;
+}
